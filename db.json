@@ -1,0 +1,47 @@
+{
+    "recettes": [
+      {
+        "id": 1,
+        "nom": "Spaghetti Bolognese",
+        "ingredients": [
+          "200g de spaghetti",
+          "100g de viande hachée",
+          "1 oignon",
+          "2 gousses d'ail",
+          "400g de tomates concassées",
+          "Huile d'olive",
+          "Sel",
+          "Poivre"
+        ],
+        "etapes": [
+          "Faire cuire les spaghetti selon les instructions du paquet.",
+          "Faire revenir l'oignon et l'ail dans l'huile d'olive.",
+          "Ajouter la viande hachée et cuire jusqu'à ce qu'elle soit dorée.",
+          "Ajouter les tomates concassées, saler, poivrer et laisser mijoter 15 minutes.",
+          "Mélanger la sauce avec les spaghetti et servir chaud."
+        ],
+        "photo": "https://tse3.mm.bing.net/th/id/OIP.YixleAz2dzjXRd3FGfaIlwHaE7?rs=1&pid=ImgDetMain",
+        "categorie": "Plat principale"
+      },
+      {
+        "id": 2,
+        "nom": "Salade César",
+        "ingredients": [
+          "1 laitue romaine",
+          "100g de poulet grillé",
+          "Croutons",
+          "Parmesan râpé",
+          "Sauce César"
+        ],
+        "etapes": [
+          "Laver et couper la laitue.",
+          "Ajouter le poulet grillé en morceaux.",
+          "Ajouter les croutons et le parmesan.",
+          "Verser la sauce César et mélanger délicatement."
+        ],
+        "photo": "https://tse4.mm.bing.net/th/id/OIP.IeTO-dugqc6lO4pZJcyDcgHaFY?w=721&h=524&rs=1&pid=ImgDetMain",
+        "categorie": "Entrée"
+      }
+    ]
+  }
+  
