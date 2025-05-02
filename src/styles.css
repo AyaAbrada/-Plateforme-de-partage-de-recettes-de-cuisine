@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('https://venezianogourmet.com/web/wp-content/uploads/2019/09/bk.jpg');
+    background-size: cover;  
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+    font-family: Arial, sans-serif;  
+  }
+  
+  
+  .app-container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
