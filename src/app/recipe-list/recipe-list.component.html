@@ -1,3 +1,9 @@
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<div *ngIf="!errorMessage">
+
 <div class="recipe-container">
     <h1>Liste des Recettes</h1>
     
@@ -13,18 +19,15 @@
       <!-- Affichage de la catégorie -->
       <p><strong>Catégorie:</strong> {{ recette.categorie }}</p>
       
-      <!-- Liste des ingrédients -->
-      <h4>Ingrédients</h4>
-      <ul>
-        <li *ngFor="let ingr of recette.ingredients">{{ ingr }}</li>
-      </ul>
-      
-      <!-- Étapes de la recette -->
-      <h4>Étapes</h4>
-      <ol>
-        <li *ngFor="let etape of recette.etapes">{{ etape }}</li>
-      </ol>
+  
+      <div *ngFor="let recette of recettes">
+        <a [routerLink]="['/recipe-detail', recette.id]">
+          Voir {{ recette.nom }}
+        </a>
+      </div>
     </div>
+
+    
   </div>
   
   
