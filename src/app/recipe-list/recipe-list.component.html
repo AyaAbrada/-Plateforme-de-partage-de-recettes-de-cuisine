@@ -1,15 +1,23 @@
-<div class="recipe-grid">
-  <div *ngFor="let recette of recettes" class="recipe-card">
-    <h2>{{ recette.nom }}</h2>
+<div class="recipe-container">
+  <h1>Liste des Recettes</h1>
 
-    <div *ngIf="recette.photo">
-      <img [src]="recette.photo" alt="{{ recette.nom }}" class="recipe-image">
+  <!-- Grille des recettes -->
+  <div class="recipe-grid">
+    <div *ngFor="let recette of recettes" class="recipe-card">
+      <h2>{{ recette.nom }}</h2>
+
+      <!-- Image de la recette -->
+      <div *ngIf="recette.photo">
+        <img [src]="recette.photo" alt="{{ recette.nom }}" class="recipe-image">
+      </div>
+
+      <!-- Affichage de la catégorie -->
+      <p><strong>Catégorie:</strong> {{ recette.categorie }}</p>
+
+      <!-- Lien vers les détails -->
+      <a [routerLink]="['/recipe-detail', recette.id]">
+        Voir {{ recette.nom }}
+      </a>
     </div>
-
-    <p><strong>Catégorie:</strong> {{ recette.categorie }}</p>
-
-    <a [routerLink]="['/recipe-detail', recette.id]">
-      Voir {{ recette.nom }}
-    </a>
   </div>
 </div>
